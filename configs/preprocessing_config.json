@@ -1,0 +1,42 @@
+{
+  "audio_parameters": {
+    "sample_rate": 32000,
+    "target_duration_seconds": 5.0,
+    "target_samples": 160000,
+    "audio_formats_supported": ["ogg", "wav", "mp3", "flac", "m4a"],
+    "max_file_size_mb": 10.0
+  },
+  "stft_parameters": {
+    "n_fft": 2048,
+    "hop_length": 512,
+    "win_length": 2048,
+    "window_type": "hann",
+    "overlap_percentage": 0.75
+  },
+  "mel_spectrogram_parameters": {
+    "n_mels": 128,
+    "f_min": 50,
+    "f_max": 14000,
+    "power": 2.0,
+    "top_db": 80.0,
+    "eps": 1e-6
+  },
+  "tensor_parameters": {
+    "normalization": "min_max_scaling",
+    "range_min": 0.0,
+    "range_max": 1.0,
+    "target_height": 224,
+    "target_width": 224,
+    "num_channels": 3,
+    "channel_replication": "rgb_triplication"
+  },
+  "taxonomic_distribution": {
+    "total_species": 206,
+    "groups": {
+      "Aves": {"species_count": 192, "sample_percentage": 96.79},
+      "Amphibia": {"species_count": 6, "sample_percentage": 2.04},
+      "Mammalia": {"species_count": 5, "sample_percentage": 0.62},
+      "Insecta": {"species_count": 3, "sample_percentage": 0.54}
+    }
+  }
+}
