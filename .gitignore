@@ -218,3 +218,29 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Archivos de audio y datasets pesados
+data/raw/
+data/processed/
+*.ogg
+*.wav
+*.mp3
+*.flac
+
+# Pesos de modelos y checkpoints
+models/checkpoints/
+*.pth
+*.pt
+*.onnx
+*.tflite
+
+# Caché de imágenes y espectrogramas
+*.png
+*.jpg
+*.npy
+*.npz
+
+# Logs y resultados temporales
+logs/
+tensorboard/
+.DS_Store
